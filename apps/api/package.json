@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "backend of quizzes app",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc -b",
+    "start": "npm run build && node dist/index.js",
+    "cleanup": "rimraf node_modules && rimraf dist",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "author": "yashpal",
+  "license": "ISC",
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/eslint": "^8.56.5",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.24",
+    "eslint": "^8.57.0",
+    "nodemon": "^3.0.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
