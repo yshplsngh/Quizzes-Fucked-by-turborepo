@@ -1,11 +1,11 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalEnv": ["REFRESH_TOKEN_SECRET"],
+  "globalEnv": ["PORT"],
   "globalDependencies": [".env"],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "env": ["REFRESH_TOKEN_SECRET"],
+      "env": ["PORT"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {
