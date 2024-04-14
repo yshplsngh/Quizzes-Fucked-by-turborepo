@@ -1,6 +1,7 @@
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+
 import { corsOptions, credentials } from "./utils/corsOption";
 
 const app: Express = express();

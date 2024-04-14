@@ -13,9 +13,9 @@
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
+    "husky": "^8.0.0",
     "prettier": "^3.2.5",
-    "turbo": "latest",
-    "husky": "^8.0.0"
+    "turbo": "latest"
   },
   "engines": {
     "node": ">=18"
